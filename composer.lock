@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd055bf41e41a1bd39b1226210b28962",
+    "content-hash": "d5af533d15f7d5f0c0ac10fa30260a1e",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -1001,6 +1001,78 @@
                 }
             ],
             "time": "2020-12-29T14:50:06+00:00"
+        },
+        {
+            "name": "ffans/lang-simplified-chinese",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FFans/lang-simplified-chinese.git",
+                "reference": "baf2e31dffdebc769d67e442627680f5926157f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FFans/lang-simplified-chinese/zipball/baf2e31dffdebc769d67e442627680f5926157f4",
+                "reference": "baf2e31dffdebc769d67e442627680f5926157f4",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "replace": {
+                "littlegolden/flarum-lang-simplified-chinese": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "简体中文",
+                    "icon": {
+                        "image": "icon.svg",
+                        "backgroundColor": "#fff",
+                        "backgroundSize": "cover",
+                        "backgroundPosition": "center"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/22690"
+                },
+                "flarum-locale": {
+                    "code": "zh-Hans",
+                    "title": "简体中文"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Flarum Fans",
+                    "email": "littlegolden@vip.qq.com",
+                    "homepage": "https://github.com/FFans"
+                }
+            ],
+            "description": "Flarum 简体中文语言包 2021",
+            "keywords": [
+                "Chinsese",
+                "extension",
+                "flarum",
+                "locale",
+                "中文",
+                "简体中文"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/22690",
+                "issues": "https://github.com/FFans/lang-simplified-chinese/issues",
+                "source": "https://github.com/FFans/lang-simplified-chinese"
+            },
+            "funding": [
+                {
+                    "url": "https://pay.csur.fun/",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-05-31T16:15:49+00:00"
         },
         {
             "name": "fig/http-message-util",

@@ -20,12 +20,13 @@
         "source": "https://github.com/nyu8/forum"
     },
     "require": {
-        "flarum/core": "^1.0",
+        "ffans/lang-simplified-chinese": "^1.0",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
+        "flarum/core": "^1.0",
         "flarum/emoji": "*",
-        "flarum/lang-english": "*",
         "flarum/flags": "*",
+        "flarum/lang-english": "*",
         "flarum/likes": "*",
         "flarum/lock": "*",
         "flarum/markdown": "*",
