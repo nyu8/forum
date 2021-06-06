@@ -7,7 +7,7 @@
         "discussion"
     ],
     "homepage": "https://nyu8.com/",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "NYU8",
