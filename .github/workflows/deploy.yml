@@ -57,5 +57,5 @@ jobs:
         password: ${{ secrets.DEPLOY_PASSWORD }}
         script: |
           rm -rf ${{ secrets.DEPLOY_PATH }}/vendor ${{ secrets.DEPLOY_PATH }}/public ${{ secrets.DEPLOY_PATH }}/flarum ${{ secrets.DEPLOY_PATH }}/extend.php ${{ secrets.DEPLOY_PATH }}/site.php
-          unzip -fo ${{ secrets.DEPLOY_PATH }}/package.zip -d ${{ secrets.DEPLOY_PATH }}
+          unzip -o ${{ secrets.DEPLOY_PATH }}/package.zip -d ${{ secrets.DEPLOY_PATH }}
           rm -rf ${{ secrets.DEPLOY_PATH }}/package.zip
