@@ -1,0 +1,45 @@
+{
+    "name": "nyu8/forum",
+    "description": "Forum for NYU Chinese community.",
+    "type": "project",
+    "keywords": [
+        "forum",
+        "discussion"
+    ],
+    "homepage": "https://nyu8.com/",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "NYU8",
+            "email": "dev@nyu8.com",
+            "homepage": "https://github.com/nyu8"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/nyu8/forum/issues",
+        "source": "https://github.com/nyu8/forum"
+    },
+    "require": {
+        "flarum/core": "^1.0",
+        "flarum/approval": "*",
+        "flarum/bbcode": "*",
+        "flarum/emoji": "*",
+        "flarum/lang-english": "*",
+        "flarum/flags": "*",
+        "flarum/likes": "*",
+        "flarum/lock": "*",
+        "flarum/markdown": "*",
+        "flarum/mentions": "*",
+        "flarum/nicknames": "*",
+        "flarum/pusher": "*",
+        "flarum/statistics": "*",
+        "flarum/sticky": "*",
+        "flarum/subscriptions": "*",
+        "flarum/suspend": "*",
+        "flarum/tags": "*"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
