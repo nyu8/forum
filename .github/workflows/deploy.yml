@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: Setup PHP with PECL extension
+    - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
         php-version: '7.4'
@@ -31,13 +31,14 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
     
-    - name: Easy Zip Files
+    - name: Package
       uses: vimtor/action-zip@v1
       with:
         files: vendor/ public/ flarum extend.php site.php
         dest: package.zip
+        recursive: false
     
-    - name: SFTP SSH Action
+    - name: Upload to server
       uses: Creepios/sftp-action@v1.0.1
       with:
         host: ${{ secrets.DEPLOY_HOST }}
@@ -46,3 +47,15 @@ jobs:
         password: ${{ secrets.DEPLOY_PASSWORD }}
         localPath: package.zip
         remotePath: ${{ secrets.DEPLOY_PATH }}/package.zip
+
+    - name: Deploy
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.DEPLOY_HOST }}
+        port: ${{ secrets.DEPLOY_PORT }}
+        username: ${{ secrets.DEPLOY_USERNAME }}
+        password: ${{ secrets.DEPLOY_PASSWORD }}
+        script: |
+          rm -rf ${{ secrets.DEPLOY_PATH }}/vendor ${{ secrets.DEPLOY_PATH }}/public ${{ secrets.DEPLOY_PATH }}/flarum ${{ secrets.DEPLOY_PATH }}/extend.php ${{ secrets.DEPLOY_PATH }}/site.php
+          unzip -f -o ${{ secrets.DEPLOY_PATH }}/package.zip -d ${{ secrets.DEPLOY_PATH }}
+          rm -rf ${{ secrets.DEPLOY_PATH }}/package.zip
