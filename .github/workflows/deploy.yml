@@ -33,7 +33,7 @@ jobs:
       - name: Package
         uses: vimtor/action-zip@v1
         with:
-          files: vendor/ .htaccess extend.php flarum index.php site.php
+          files: vendor/ .htaccess composer.json extend.php flarum index.php site.php
           dest: package.zip
           recursive: false
 
@@ -55,6 +55,6 @@ jobs:
           username: ${{ secrets.DEPLOY_USERNAME }}
           password: ${{ secrets.DEPLOY_PASSWORD }}
           script: |
-            rm -rf ${{ secrets.DEPLOY_PATH }}/vendor ${{ secrets.DEPLOY_PATH }}/.htaccess ${{ secrets.DEPLOY_PATH }}/extend.php ${{ secrets.DEPLOY_PATH }}/flarum ${{ secrets.DEPLOY_PATH }}/index.php ${{ secrets.DEPLOY_PATH }}/site.php
+            rm -rf ${{ secrets.DEPLOY_PATH }}/vendor ${{ secrets.DEPLOY_PATH }}/.htaccess ${{ secrets.DEPLOY_PATH}}/composer.json ${{ secrets.DEPLOY_PATH }}/extend.php ${{ secrets.DEPLOY_PATH }}/flarum ${{ secrets.DEPLOY_PATH }}/index.php ${{ secrets.DEPLOY_PATH }}/site.php
             unzip -o ${{ secrets.DEPLOY_PATH }}/package.zip -d ${{ secrets.DEPLOY_PATH }}
             rm -rf ${{ secrets.DEPLOY_PATH }}/package.zip

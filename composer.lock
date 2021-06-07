@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2305d39f54bf3e3a774cf9482567d660",
+    "content-hash": "9e7d32bdbdba742f1b0a4e49b4649348",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -5160,15 +5160,15 @@
         },
         {
             "name": "nyu8/flarum-auth0",
-            "version": "dev-main",
+            "version": "1.0.5",
             "dist": {
                 "type": "path",
-                "url": "packages/auth0",
-                "reference": "4828a9468cb14c017edd6cc52b9802a7b646c00b"
+                "url": "packages/flarum-auth0",
+                "reference": "7816a917652feda74a9231d483cd84fd4cee5596"
             },
             "require": {
-                "flarum/core": ">=0.1.0-beta.16",
-                "riskio/oauth2-auth0": "^2.0.0"
+                "flarum/core": "^1.0",
+                "riskio/oauth2-auth0": "^2.4"
             },
             "type": "flarum-extension",
             "extra": {
@@ -5177,15 +5177,24 @@
                     "icon": {
                         "name": "fas fa-user",
                         "backgroundColor": "#eb5424",
-                        "color": "#fff"
+                        "color": "#ffffff"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "NYU8\\Auth0\\": "src/"
+                    "NYU8\\FlarumAuth0\\": "src/"
                 }
             },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "NYU8",
+                    "email": "dev@nyu8.com"
+                }
+            ],
             "description": "Sign into Flarum with Auth0.com.",
             "transport-options": {
                 "relative": true
@@ -8756,9 +8765,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "nyu8/flarum-auth0": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
