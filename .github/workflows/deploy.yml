@@ -28,7 +28,9 @@ jobs:
             ${{ runner.os }}-php-
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-progress
+        run: |
+          composer install --prefer-dist --no-progress
+          ls
 
       - name: Set env
         run: php scripts/deploy_set_env.php
