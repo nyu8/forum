@@ -42,16 +42,10 @@
         "flarum/suspend": "*",
         "flarum/tags": "*",
         "fof/nightmode": "^1.0",
-        "nyu8/flarum-auth0": "^1.0"
+        "fof/oauth": "*"
     },
     "config": {
         "preferred-install": "dist",
         "sort-packages": true
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "packages/*"
-        }
-    ]
+    }
 }

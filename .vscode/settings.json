@@ -16,6 +16,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.words": [
-    "Flarum"
+    "Diactoros",
+    "Flarum",
+    "Riskio"
   ]
 }
