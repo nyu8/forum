@@ -8,7 +8,7 @@ function setEnv(string $key, string $value) {
 $deployPath = trim($_SERVER['DEPLOY_PATH'], '\\/');
 
 $deployList = [
-  'vender/',
+  'vender',
   '.htaccess',
   'composer.json',
   'extend.php',
