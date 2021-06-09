@@ -7,6 +7,132 @@
     "content-hash": "1861e06257c1671f9dfd26fb97128c2b",
     "packages": [
         {
+            "name": "auth0/auth0-php",
+            "version": "7.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auth0/auth0-PHP.git",
+                "reference": "0611fbabcb802ac63533f1c0ff5bd765e22f4aa3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auth0/auth0-PHP/zipball/0611fbabcb802ac63533f1c0ff5bd765e22f4aa3",
+                "reference": "0611fbabcb802ac63533f1c0ff5bd765e22f4aa3",
+                "shasum": ""
+            },
+            "require": {
+                "auth0/php-jwt": "3.3.4",
+                "ext-json": "*",
+                "ext-openssl": "*",
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "php": "^7.3 | ^8.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "require-dev": {
+                "cache/adapter-common": "^1.2",
+                "cache/array-adapter": "^1.1",
+                "cache/hierarchical-cache": "^1.1",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "josegonzalez/dotenv": "^3.2",
+                "phpcompatibility/php-compatibility": "^8.1",
+                "phpstan/phpstan": "^0.12.64",
+                "phpunit/phpunit": "^9.3",
+                "squizlabs/php_codesniffer": "^3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Auth0\\SDK\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Auth0",
+                    "email": "support@auth0.com",
+                    "homepage": "http://www.auth0.com/"
+                }
+            ],
+            "description": "Auth0 PHP SDK.",
+            "homepage": "https://github.com/auth0/auth0-PHP",
+            "support": {
+                "issues": "https://github.com/auth0/auth0-PHP/issues",
+                "source": "https://github.com/auth0/auth0-PHP/tree/7.9.0"
+            },
+            "time": "2021-05-04T00:30:48+00:00"
+        },
+        {
+            "name": "auth0/php-jwt",
+            "version": "3.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auth0/php-jwt.git",
+                "reference": "a0daa1a728cf85230843ebb8c1183047fe493284"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auth0/php-jwt/zipball/a0daa1a728cf85230843ebb8c1183047fe493284",
+                "reference": "a0daa1a728cf85230843ebb8c1183047fe493284",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "php": "^5.6 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.5",
+                "phpmd/phpmd": "~2.2",
+                "phpunit/php-invoker": "~1.1",
+                "phpunit/phpunit": "^5.7 || ^7.3",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Otávio Cobucci Oblonczyk",
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+            "keywords": [
+                "JWS",
+                "jwt"
+            ],
+            "support": {
+                "source": "https://github.com/auth0/php-jwt/tree/3.3.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/lcobucci",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lcobucci",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-01-04T20:39:06+00:00"
+        },
+        {
             "name": "axy/backtrace",
             "version": "1.0.7",
             "source": {
@@ -2829,7 +2955,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -2882,7 +3008,7 @@
         },
         {
             "name": "illuminate/cache",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/cache.git",
@@ -2939,7 +3065,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -2993,7 +3119,7 @@
         },
         {
             "name": "illuminate/config",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/config.git",
@@ -3041,16 +3167,16 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
-                "reference": "67e8cd22a6e6cefd1296234c8d494e5ce509f491"
+                "reference": "1f1ff88a2efbfc85f87ea7d8283acbefc5b56191"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/console/zipball/67e8cd22a6e6cefd1296234c8d494e5ce509f491",
-                "reference": "67e8cd22a6e6cefd1296234c8d494e5ce509f491",
+                "url": "https://api.github.com/repos/illuminate/console/zipball/1f1ff88a2efbfc85f87ea7d8283acbefc5b56191",
+                "reference": "1f1ff88a2efbfc85f87ea7d8283acbefc5b56191",
                 "shasum": ""
             },
             "require": {
@@ -3097,11 +3223,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-05-26T18:52:36+00:00"
+            "time": "2021-06-04T13:29:57+00:00"
         },
         {
             "name": "illuminate/container",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -3152,7 +3278,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -3200,16 +3326,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "905886ead0b052878608cbe5f3fb0e38ff687cf4"
+                "reference": "a86efc94475ca00e1a11cfe7ee212699af9ddd61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/905886ead0b052878608cbe5f3fb0e38ff687cf4",
-                "reference": "905886ead0b052878608cbe5f3fb0e38ff687cf4",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/a86efc94475ca00e1a11cfe7ee212699af9ddd61",
+                "reference": "a86efc94475ca00e1a11cfe7ee212699af9ddd61",
                 "shasum": ""
             },
             "require": {
@@ -3264,11 +3390,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-06-03T16:39:17+00:00"
+            "time": "2021-06-08T13:23:07+00:00"
         },
         {
             "name": "illuminate/events",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -3323,7 +3449,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -3385,7 +3511,7 @@
         },
         {
             "name": "illuminate/hashing",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/hashing.git",
@@ -3433,7 +3559,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -3479,7 +3605,7 @@
         },
         {
             "name": "illuminate/mail",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/mail.git",
@@ -3540,7 +3666,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -3588,7 +3714,7 @@
         },
         {
             "name": "illuminate/queue",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
@@ -3653,7 +3779,7 @@
         },
         {
             "name": "illuminate/session",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/session.git",
@@ -3709,16 +3835,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "3832c4a0ba0f0734de8689500164122f5f51c8ab"
+                "reference": "79e1ec26d58426e4f06e5b548712a8a6dc1ffdca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/3832c4a0ba0f0734de8689500164122f5f51c8ab",
-                "reference": "3832c4a0ba0f0734de8689500164122f5f51c8ab",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/79e1ec26d58426e4f06e5b548712a8a6dc1ffdca",
+                "reference": "79e1ec26d58426e4f06e5b548712a8a6dc1ffdca",
                 "shasum": ""
             },
             "require": {
@@ -3773,11 +3899,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-06-01T19:27:52+00:00"
+            "time": "2021-06-08T13:14:36+00:00"
         },
         {
             "name": "illuminate/translation",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/translation.git",
@@ -3829,16 +3955,16 @@
         },
         {
             "name": "illuminate/validation",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/validation.git",
-                "reference": "7604c1b34fc44c856e94185466bf6a110d05ce1d"
+                "reference": "679a8eec1a7e75eb7f89ec5d3ae20af750a0d818"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/validation/zipball/7604c1b34fc44c856e94185466bf6a110d05ce1d",
-                "reference": "7604c1b34fc44c856e94185466bf6a110d05ce1d",
+                "url": "https://api.github.com/repos/illuminate/validation/zipball/679a8eec1a7e75eb7f89ec5d3ae20af750a0d818",
+                "reference": "679a8eec1a7e75eb7f89ec5d3ae20af750a0d818",
                 "shasum": ""
             },
             "require": {
@@ -3884,20 +4010,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-05-31T15:20:04+00:00"
+            "time": "2021-06-08T13:24:10+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v8.45.1",
+            "version": "v8.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "7d06ca72f4ba44c7338b0f14b5de510e500ea64e"
+                "reference": "0aa62b8e2ed4ad0fd6b251f7eda9079364f1cba7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/7d06ca72f4ba44c7338b0f14b5de510e500ea64e",
-                "reference": "7d06ca72f4ba44c7338b0f14b5de510e500ea64e",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/0aa62b8e2ed4ad0fd6b251f7eda9079364f1cba7",
+                "reference": "0aa62b8e2ed4ad0fd6b251f7eda9079364f1cba7",
                 "shasum": ""
             },
             "require": {
@@ -3938,7 +4064,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-05-28T15:32:59+00:00"
+            "time": "2021-06-07T13:41:00+00:00"
         },
         {
             "name": "intervention/image",
@@ -5616,15 +5742,15 @@
         },
         {
             "name": "nyu8/flarum-auth0",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "dist": {
                 "type": "path",
                 "url": "packages/flarum-auth0",
-                "reference": "7816a917652feda74a9231d483cd84fd4cee5596"
+                "reference": "4b8f26e10c08b3ea071781bcbc53cc85251dd99e"
             },
             "require": {
-                "flarum/core": "^1.0",
-                "riskio/oauth2-auth0": "^2.4"
+                "auth0/auth0-php": "^7.9",
+                "flarum/core": "^1.0"
             },
             "type": "flarum-extension",
             "extra": {
@@ -6571,59 +6697,6 @@
                 }
             ],
             "time": "2020-08-18T17:17:46+00:00"
-        },
-        {
-            "name": "riskio/oauth2-auth0",
-            "version": "v2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/RiskioFr/oauth2-auth0.git",
-                "reference": "d8aaa4b0a63c60e3bfc89b2e0724ca697022e009"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/RiskioFr/oauth2-auth0/zipball/d8aaa4b0a63c60e3bfc89b2e0724ca697022e009",
-                "reference": "d8aaa4b0a63c60e3bfc89b2e0724ca697022e009",
-                "shasum": ""
-            },
-            "require": {
-                "league/oauth2-client": "^2.2.1",
-                "php": "^7.3|^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Riskio\\OAuth2\\Client\\Provider\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Eeckeloo",
-                    "email": "neeckeloo@gmail.com",
-                    "homepage": "https://github.com/neeckeloo"
-                }
-            ],
-            "description": "Auth0 OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
-            "keywords": [
-                "auth0",
-                "authorisation",
-                "authorization",
-                "client",
-                "oauth",
-                "oauth2"
-            ],
-            "support": {
-                "issues": "https://github.com/RiskioFr/oauth2-auth0/issues",
-                "source": "https://github.com/RiskioFr/oauth2-auth0/tree/v2.4.0"
-            },
-            "time": "2021-05-31T06:54:46+00:00"
         },
         {
             "name": "s9e/regexp-builder",
