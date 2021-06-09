@@ -1,6 +1,7 @@
 <?php
 
-function setEnv(string $key, string $value) {
+function setEnv(string $key, string $value)
+{
   $gitHubEnv = $_SERVER['GITHUB_ENV'];
   file_put_contents($gitHubEnv, "$key=$value\n", FILE_APPEND);
 }
@@ -8,6 +9,7 @@ function setEnv(string $key, string $value) {
 $deployPath = trim($_SERVER['DEPLOY_PATH'], '\\/');
 
 $deployList = [
+  'packages/',
   'vendor/',
   '.htaccess',
   'composer.json',
@@ -20,7 +22,7 @@ $deployList = [
 $packageListStr = join(' ', $deployList);
 setEnv('PACKAGE_LIST', $packageListStr);
 
-$removeList = array_map(function($item) use ($deployPath){
+$removeList = array_map(function ($item) use ($deployPath) {
   return "$deployPath/$item";
 }, $deployList);
 $removeListStr = join(' ', $removeList);

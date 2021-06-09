@@ -19,7 +19,11 @@
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
   "cSpell.words": [
+    "Creepios",
     "Diactoros",
-    "Flarum"
+    "Flarum",
+    "shivammathur",
+    "submodules",
+    "vimtor"
   ]
 }
