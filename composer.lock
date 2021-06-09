@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1861e06257c1671f9dfd26fb97128c2b",
+    "content-hash": "27539c42c39b1baf35594809d561c49d",
     "packages": [
         {
             "name": "auth0/auth0-php",
@@ -5778,6 +5778,47 @@
                 }
             ],
             "description": "Sign into Flarum with Auth0.com.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "nyu8/flarum-oauth2-server",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/flarum-oauth2-server",
+                "reference": "740ed2955dc9cc6fb8ed50f2ade55ba3337e4343"
+            },
+            "require": {
+                "flarum/core": "^1.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "OAuth2 Server",
+                    "icon": {
+                        "name": "fas fa-server",
+                        "backgroundColor": "#eb5424",
+                        "color": "#ffffff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NYU8\\FlarumOAuth2Server\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "NYU8",
+                    "email": "dev@nyu8.com"
+                }
+            ],
+            "description": "Turn your Flarum user system into an OAuth2 server.",
             "transport-options": {
                 "relative": true
             }
