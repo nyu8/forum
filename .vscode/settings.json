@@ -22,6 +22,9 @@
     "Creepios",
     "Diactoros",
     "Flarum",
+    "Vnode",
+    "mithril",
+    "oninit",
     "shivammathur",
     "submodules",
     "vimtor"
