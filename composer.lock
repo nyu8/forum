@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52928d066a4fb5c7fbd0a8091e5916c9",
+    "content-hash": "5e1861592416846a7546cd3c9f9a267c",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -5957,6 +5957,49 @@
                 "source": "https://github.com/nikic/FastRoute/tree/master"
             },
             "time": "2015-06-18T19:15:47+00:00"
+        },
+        {
+            "name": "nyu8/flarum-email-filter",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/flarum-email-filter",
+                "reference": "afcc2c7f09ccbde41a9037eb67dc7a8560cfaff6"
+            },
+            "require": {
+                "flarum/core": "^1.0",
+                "fof/components": "^1.0",
+                "fof/extend": "^1.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Email Filter",
+                    "icon": {
+                        "name": "fas fa-envelope",
+                        "backgroundColor": "#eb5424",
+                        "color": "#ffffff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NYU8\\FlarumEmailFilter\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "NYU8",
+                    "email": "dev@nyu8.com"
+                }
+            ],
+            "description": "Filter emails registering your Flarum site with whitelist, blacklist and even regular expressions.",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "nyu8/flarum-oauth2-server",

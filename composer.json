@@ -43,6 +43,7 @@
         "flarum/tags": "*",
         "fof/nightmode": "^1.0",
         "fof/oauth": "*",
+        "nyu8/flarum-email-filter": "*",
         "nyu8/flarum-oauth2-server": "*"
     },
     "config": {
