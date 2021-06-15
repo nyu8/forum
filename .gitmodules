@@ -1,6 +1,6 @@
-[submodule "packages/flarum-auth0"]
-	path = packages/flarum-auth0
-	url = https://github.com/nyu8/flarum-auth0.git
 [submodule "packages/flarum-oauth2-server"]
 	path = packages/flarum-oauth2-server
 	url = https://github.com/nyu8/flarum-oauth2-server.git
+[submodule "packages/flarum-email-filter"]
+	path = packages/flarum-email-filter
+	url = https://github.com/nyu8/flarum-email-filter.git

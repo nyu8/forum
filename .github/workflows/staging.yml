@@ -1,0 +1,67 @@
+name: Staging
+
+on:
+  push:
+    branches: [dev]
+  pull_request:
+    branches: [dev]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "7.4"
+
+      - name: Cache Composer packages
+        id: composer-cache
+        uses: actions/cache@v2
+        with:
+          path: vendor
+          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+
+      - name: Install dependencies
+        run: |
+          composer install --prefer-dist --no-progress
+          ls
+
+      - name: Set env
+        run: php scripts/deploy_set_env.php
+        env:
+          DEPLOY_PATH: ${{ secrets.STAGING_DEPLOY_PATH }}
+
+      - name: Package
+        uses: vimtor/action-zip@v1
+        with:
+          files: ${{ env.PACKAGE_LIST }}
+          dest: package.zip
+          recursive: false
+
+      - name: Upload to server
+        uses: Creepios/sftp-action@v1.0.1
+        with:
+          host: ${{ secrets.STAGING_DEPLOY_HOST }}
+          port: ${{ secrets.STAGING_DEPLOY_PORT }}
+          username: ${{ secrets.STAGING_DEPLOY_USERNAME }}
+          password: ${{ secrets.STAGING_DEPLOY_PASSWORD }}
+          localPath: package.zip
+          remotePath: ${{ secrets.STAGING_DEPLOY_PATH }}/package.zip
+
+      - name: Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.STAGING_DEPLOY_HOST }}
+          port: ${{ secrets.STAGING_DEPLOY_PORT }}
+          username: ${{ secrets.STAGING_DEPLOY_USERNAME }}
+          password: ${{ secrets.STAGING_DEPLOY_PASSWORD }}
+          script: |
+            rm -rf ${{ env.REMOVE_LIST }}
+            unzip -o ${{ secrets.STAGING_DEPLOY_PATH }}/package.zip -d ${{ secrets.STAGING_DEPLOY_PATH }}
+            rm -rf ${{ secrets.STAGING_DEPLOY_PATH }}/package.zip
