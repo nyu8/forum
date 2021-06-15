@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e1861592416846a7546cd3c9f9a267c",
+    "content-hash": "d8b085bcb0fd6e0ba243323b81138e2f",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -2615,6 +2615,89 @@
                 }
             ],
             "time": "2021-06-14T13:58:09+00:00"
+        },
+        {
+            "name": "fof/upload",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/upload.git",
+                "reference": "a0203ba7179c342a05e51eb733beacb0f5ddbf26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/upload/zipball/a0203ba7179c342a05e51eb733beacb0f5ddbf26",
+                "reference": "a0203ba7179c342a05e51eb733beacb0f5ddbf26",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "flarum/core": "^1.0.0",
+                "guzzlehttp/guzzle": "^6.0 || ^7.0",
+                "ramsey/uuid": "^3.5.2 || ^4",
+                "softcreatr/php-mime-detector": "^3.0"
+            },
+            "replace": {
+                "flagrow/upload": "*"
+            },
+            "require-dev": {
+                "league/flysystem-aws-s3-v3": "^1.0",
+                "overtrue/flysystem-qiniu": "1.0.4"
+            },
+            "suggest": {
+                "league/flysystem-aws-s3-v3": "Uploads to AWS S3 using API version 3.",
+                "overtrue/flysystem-qiniu": "Uploads to QiNiu using API."
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Upload",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-file-upload",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/4154"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Upload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@klabbers.email",
+                    "homepage": "https://luceos.com/"
+                }
+            ],
+            "description": "The file upload extension for the Flarum forum with insane intelligence.",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "file",
+                "flarum",
+                "upload"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/4154",
+                "issues": "https://github.com/FriendsOfFlarum/upload/issues",
+                "source": "https://github.com/FriendsOfFlarum/upload"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-06-03T16:21:53+00:00"
         },
         {
             "name": "franzl/whoops-middleware",
@@ -5960,11 +6043,11 @@
         },
         {
             "name": "nyu8/flarum-email-filter",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "dist": {
                 "type": "path",
                 "url": "packages/flarum-email-filter",
-                "reference": "afcc2c7f09ccbde41a9037eb67dc7a8560cfaff6"
+                "reference": "5c30cc702639f58fd8205f6fc0dda940270b0b7b"
             },
             "require": {
                 "flarum/core": "^1.0",
@@ -7120,6 +7203,69 @@
                 "source": "https://github.com/s9e/TextFormatter/tree/2.9.3"
             },
             "time": "2021-05-30T11:33:06+00:00"
+        },
+        {
+            "name": "softcreatr/php-mime-detector",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SoftCreatR/php-mime-detector.git",
+                "reference": "bd26abae1659901617ed51150063c310e089eef9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SoftCreatR/php-mime-detector/zipball/bd26abae1659901617ed51150063c310e089eef9",
+                "reference": "bd26abae1659901617ed51150063c310e089eef9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=7.0",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SoftCreatR\\MimeDetector\\": "src/SoftCreatR/MimeDetector"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Sascha Greuel",
+                    "email": "hello@1-2.dev"
+                },
+                {
+                    "name": "Sebastian Zimmer",
+                    "email": "morik@softcreatr.de"
+                }
+            ],
+            "description": "Mime Detector Decoder",
+            "homepage": "https://1-2.dev",
+            "keywords": [
+                "Magic Number",
+                "file type",
+                "mime",
+                "mime type"
+            ],
+            "support": {
+                "email": "hello@1-2.dev",
+                "issues": "https://github.com/SoftCreatR/php-mime-detector/issues",
+                "source": "https://github.com/SoftCreatR/php-mime-detector"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/softcreatr",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-05-30T10:34:43+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
