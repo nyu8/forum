@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "272e57b499a2262761b259f54da13be8",
+    "content-hash": "5b8d4b8b4b50f58834a519e2fc5b0498",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -2529,6 +2529,75 @@
             "time": "2021-05-29T08:35:16+00:00"
         },
         {
+            "name": "fof/links",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/links.git",
+                "reference": "3d97f2e4068b1e2b28c94178117285a36af3011c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/links/zipball/3d97f2e4068b1e2b28c94178117285a36af3011c",
+                "reference": "3d97f2e4068b1e2b28c94178117285a36af3011c",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "replace": {
+                "sijad/flarum-ext-links": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Links",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-bars",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/18335"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Links\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manage Flarum primary navbar menu links",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/18335",
+                "issues": "https://github.com/FriendsOfFlarum/links/issues",
+                "source": "https://github.com/FriendsOfFlarum/links"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-05-17T14:40:19+00:00"
+        },
+        {
             "name": "fof/nightmode",
             "version": "1.0.0",
             "source": {
@@ -3006,6 +3075,77 @@
                 }
             ],
             "time": "2021-06-03T16:21:53+00:00"
+        },
+        {
+            "name": "fof/user-bio",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/user-bio.git",
+                "reference": "3f2e3d281b74b033d7dcff4bb2dbf4e90bb32eb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/user-bio/zipball/3f2e3d281b74b033d7dcff4bb2dbf4e90bb32eb3",
+                "reference": "3f2e3d281b74b033d7dcff4bb2dbf4e90bb32eb3",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF User Bio",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-pen",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    },
+                    "optional-dependencies": [
+                        "flarum/suspend"
+                    ]
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/17775"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\UserBio\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Charlie K",
+                    "email": "charlie.k@redevs.org",
+                    "homepage": "https://redevs.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add a user bio to user profiles",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "Friends of Flarum",
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/17775",
+                "issues": "https://github.com/FriendsOfFlarum/user-bio/issues",
+                "source": "https://github.com/FriendsOfFlarum/user-bio"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-05-17T14:52:58+00:00"
         },
         {
             "name": "franzl/whoops-middleware",
