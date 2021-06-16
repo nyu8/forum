@@ -45,6 +45,7 @@
         "fof/nightmode": "^1.0",
         "fof/oauth": "*",
         "fof/polls": "^1.0",
+        "fof/terms": "^1.0",
         "fof/upload": "^1.0",
         "nyu8/flarum-email-filter": "*",
         "nyu8/flarum-oauth2-server": "*"
