@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec5b63c537ec1acf8554f58570302c18",
+    "content-hash": "909d67a6f93570f6f49abd10e55c21c0",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -2395,6 +2395,73 @@
                 }
             ],
             "time": "2021-05-17T13:47:34+00:00"
+        },
+        {
+            "name": "fof/drafts",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/drafts.git",
+                "reference": "baa1567b8d6372a499d037f5ca0a0ae0417c4b64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/drafts/zipball/baa1567b8d6372a499d037f5ca0a0ae0417c4b64",
+                "reference": "baa1567b8d6372a499d037f5ca0a0ae0417c4b64",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Drafts",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-edit",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20957"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Drafts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FoF Team",
+                    "email": "team@friendsofflarum.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Allow users to create post and discussion drafts",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "Friends of Flarum",
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20957",
+                "issues": "https://github.com/FriendsOfFlarum/drafts/issues",
+                "source": "https://github.com/FriendsOfFlarum/drafts"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-05-29T07:31:02+00:00"
         },
         {
             "name": "fof/extend",
