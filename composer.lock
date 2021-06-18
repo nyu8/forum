@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fe5a0e29729e823a642c2f5f2f3fb54",
+    "content-hash": "f822a7a37e59474183cd6c82d06f4280",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -6173,6 +6173,72 @@
                 "source": "https://github.com/matthiasmullie/path-converter/tree/1.1.3"
             },
             "time": "2019-02-05T23:41:09+00:00"
+        },
+        {
+            "name": "michaelbelgium/flarum-discussion-views",
+            "version": "v7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MichaelBelgium/flarum-discussion-views.git",
+                "reference": "0c3108d039ee1470239db268ea4fd0f3f0af3329"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MichaelBelgium/flarum-discussion-views/zipball/0c3108d039ee1470239db268ea4fd0f3f0af3329",
+                "reference": "0c3108d039ee1470239db268ea4fd0f3f0af3329",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0"
+            },
+            "suggest": {
+                "dynastyking/flarum-lang-ptbr": "Includes Brazilian Portuguese translation for this extension",
+                "michaelbelgium/flarum-dutch": "Includes Dutch translation for this extension",
+                "rob006/flarum-lang-polish": "Includes Polish translation for this extension",
+                "rooaaar/lang-french-extended": "Includes French translation for this extension"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Discussion views",
+                    "icon": {
+                        "name": "far fa-eye",
+                        "backgroundColor": "#88CC23",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/26269"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Michaelbelgium\\Discussionviews\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael V.",
+                    "email": "michael@michaelbelgium.me"
+                }
+            ],
+            "description": "Add views to flarum discussions",
+            "support": {
+                "forum": "https://discuss.flarum.org/d/26269",
+                "issues": "https://github.com/MichaelBelgium/flarum-discussion-views/issues",
+                "source": "https://github.com/MichaelBelgium/flarum-discussion-views"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/MichaelBelgium",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-02T19:34:11+00:00"
         },
         {
             "name": "middlewares/base-path",
