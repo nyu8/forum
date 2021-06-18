@@ -41,6 +41,7 @@
         "flarum/subscriptions": "*",
         "flarum/suspend": "*",
         "flarum/tags": "*",
+        "fof/drafts": "*",
         "fof/follow-tags": "^1.0",
         "fof/gamification": "^1.0",
         "fof/links": "^1.0",
