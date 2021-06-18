@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b8d4b8b4b50f58834a519e2fc5b0498",
+    "content-hash": "5fe5a0e29729e823a642c2f5f2f3fb54",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -2444,6 +2444,77 @@
             "time": "2021-05-21T23:38:23+00:00"
         },
         {
+            "name": "fof/follow-tags",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/follow-tags.git",
+                "reference": "044b7267230dfa2b2d7657a8cb7aef4406177be0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/follow-tags/zipball/044b7267230dfa2b2d7657a8cb7aef4406177be0",
+                "reference": "044b7267230dfa2b2d7657a8cb7aef4406177be0",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0",
+                "flarum/tags": "^1.0.0",
+                "fof/extend": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Follow Tags",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-user-tag",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    },
+                    "optional-dependencies": [
+                        "flarum/subscriptions"
+                    ]
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20525"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\FollowTags\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Follow tags and be notified of new discussions and replies",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20525",
+                "issues": "https://github.com/FriendsOfFlarum/follow-tags/issues",
+                "source": "https://github.com/FriendsOfFlarum/follow-tags"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-05-26T12:35:34+00:00"
+        },
+        {
             "name": "fof/gamification",
             "version": "1.0.0",
             "source": {
@@ -3423,6 +3494,73 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.8.2"
             },
             "time": "2021-04-26T09:17:50+00:00"
+        },
+        {
+            "name": "ianm/follow-users",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imorland/follow-users.git",
+                "reference": "ea7203a0a4d19b6990eb10e8f1b324e703adf405"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imorland/follow-users/zipball/ea7203a0a4d19b6990eb10e8f1b324e703adf405",
+                "reference": "ea7203a0a4d19b6990eb10e8f1b324e703adf405",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0",
+                "fof/follow-tags": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Follow Users",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-user-friends",
+                        "backgroundColor": "#0072e3",
+                        "color": "#fff"
+                    },
+                    "optional-dependencies": [
+                        "fof/follow-tags",
+                        "fof/user-directory"
+                    ]
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/25701"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "IanM\\FollowUsers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "IanM",
+                    "homepage": "https://discuss.flarum.org/u/ianm",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Follow users and be notified of new discussions",
+            "keywords": [
+                "flarum",
+                "following",
+                "friends",
+                "subscribe"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/25701",
+                "issues": "https://github.com/imorland/follow-users/issues",
+                "source": "https://github.com/imorland/follow-users"
+            },
+            "time": "2021-05-26T21:07:19+00:00"
         },
         {
             "name": "illuminate/bus",
