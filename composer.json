@@ -48,6 +48,7 @@
         "fof/oauth": "*",
         "fof/pages": "^1.0",
         "fof/polls": "^1.0",
+        "fof/sitemap": "^1.0",
         "fof/terms": "^1.0",
         "fof/upload": "^1.0",
         "fof/user-bio": "^1.0",
