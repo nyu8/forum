@@ -52,6 +52,7 @@
         "fof/upload": "^1.0",
         "fof/user-bio": "^1.0",
         "ianm/follow-users": "*",
+        "michaelbelgium/flarum-discussion-views": "*",
         "nyu8/flarum-email-filter": "*",
         "nyu8/flarum-oauth2-server": "*"
     },
