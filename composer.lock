@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f822a7a37e59474183cd6c82d06f4280",
+    "content-hash": "6a51ce684968fc3b77654ce4abca5c01",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -1069,78 +1069,6 @@
             "time": "2020-12-29T14:50:06+00:00"
         },
         {
-            "name": "ffans/lang-simplified-chinese",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FFans/lang-simplified-chinese.git",
-                "reference": "baf2e31dffdebc769d67e442627680f5926157f4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FFans/lang-simplified-chinese/zipball/baf2e31dffdebc769d67e442627680f5926157f4",
-                "reference": "baf2e31dffdebc769d67e442627680f5926157f4",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.0.0"
-            },
-            "replace": {
-                "littlegolden/flarum-lang-simplified-chinese": "*"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "简体中文",
-                    "icon": {
-                        "image": "icon.svg",
-                        "backgroundColor": "#fff",
-                        "backgroundSize": "cover",
-                        "backgroundPosition": "center"
-                    }
-                },
-                "flagrow": {
-                    "discuss": "https://discuss.flarum.org/d/22690"
-                },
-                "flarum-locale": {
-                    "code": "zh-Hans",
-                    "title": "简体中文"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Flarum Fans",
-                    "email": "littlegolden@vip.qq.com",
-                    "homepage": "https://github.com/FFans"
-                }
-            ],
-            "description": "Flarum 简体中文语言包 2021",
-            "keywords": [
-                "Chinsese",
-                "extension",
-                "flarum",
-                "locale",
-                "中文",
-                "简体中文"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org/d/22690",
-                "issues": "https://github.com/FFans/lang-simplified-chinese/issues",
-                "source": "https://github.com/FFans/lang-simplified-chinese"
-            },
-            "funding": [
-                {
-                    "url": "https://pay.csur.fun/",
-                    "type": "website"
-                }
-            ],
-            "time": "2021-05-31T16:15:49+00:00"
-        },
-        {
             "name": "fig/http-message-util",
             "version": "1.1.5",
             "source": {
@@ -1266,6 +1194,78 @@
                 }
             ],
             "time": "2021-06-04T12:00:00+00:00"
+        },
+        {
+            "name": "flarum-lang/chinese-simplified",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum-lang/chinese-simplified.git",
+                "reference": "baf2e31dffdebc769d67e442627680f5926157f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum-lang/chinese-simplified/zipball/baf2e31dffdebc769d67e442627680f5926157f4",
+                "reference": "baf2e31dffdebc769d67e442627680f5926157f4",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "replace": {
+                "littlegolden/flarum-lang-simplified-chinese": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "简体中文",
+                    "icon": {
+                        "image": "icon.svg",
+                        "backgroundColor": "#fff",
+                        "backgroundSize": "cover",
+                        "backgroundPosition": "center"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/22690"
+                },
+                "flarum-locale": {
+                    "code": "zh-Hans",
+                    "title": "简体中文"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Flarum Fans",
+                    "email": "littlegolden@vip.qq.com",
+                    "homepage": "https://github.com/FFans"
+                }
+            ],
+            "description": "Flarum 简体中文语言包 2021",
+            "keywords": [
+                "Chinsese",
+                "extension",
+                "flarum",
+                "locale",
+                "中文",
+                "简体中文"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/22690",
+                "issues": "https://github.com/FFans/lang-simplified-chinese/issues",
+                "source": "https://github.com/FFans/lang-simplified-chinese"
+            },
+            "funding": [
+                {
+                    "url": "https://pay.csur.fun/",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-05-31T16:15:49+00:00"
         },
         {
             "name": "flarum/approval",
@@ -10220,6 +10220,71 @@
                 "source": "https://github.com/tobscure/json-api/tree/master"
             },
             "time": "2016-03-31T09:25:28+00:00"
+        },
+        {
+            "name": "v17development/flarum-seo",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/v17development/flarum-seo.git",
+                "reference": "cbbe884d2c1e0c79e0b708a7a4d924c2fc08545f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/v17development/flarum-seo/zipball/cbbe884d2c1e0c79e0b708a7a4d924c2fc08545f",
+                "reference": "cbbe884d2c1e0c79e0b708a7a4d924c2fc08545f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "flarum/core": "^1.0.0"
+            },
+            "conflict": {
+                "franzl/flarum-open-links-in-new-tab": "*",
+                "zerosonesfun/elint": "*"
+            },
+            "suggest": {
+                "fof/sitemap": "Allows you to generate powerful sitemap.xml files"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "SEO",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-check",
+                        "backgroundColor": "#0072ff",
+                        "color": "#ffffff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/18316"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "V17Development\\FlarumSeo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "V17 Development",
+                    "email": "info@v17.dev"
+                }
+            ],
+            "description": "Adds SEO tags for your Flarum forum",
+            "homepage": "https://v17.dev/projects/flarum-seo",
+            "support": {
+                "docs": "https://community.v17.dev/knowledgebase/category/flarum-seo",
+                "forum": "https://discuss.flarum.org/d/18316",
+                "issues": "https://github.com/v17development/flarum-seo/issues",
+                "source": "https://github.com/v17development/flarum-seo"
+            },
+            "time": "2021-05-29T13:17:07+00:00"
         },
         {
             "name": "voku/portable-ascii",
