@@ -23,7 +23,7 @@
         "source": "https://github.com/nyu8/forum"
     },
     "require": {
-        "ffans/lang-simplified-chinese": "^1.0",
+        "flarum-lang/chinese-simplified": "*",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
         "flarum/core": "^1.0",
@@ -54,7 +54,8 @@
         "ianm/follow-users": "*",
         "michaelbelgium/flarum-discussion-views": "*",
         "nyu8/flarum-email-filter": "*",
-        "nyu8/flarum-oauth2-server": "*"
+        "nyu8/flarum-oauth2-server": "*",
+        "v17development/flarum-seo": "^1.8"
     },
     "config": {
         "preferred-install": "dist",
